@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnicode - Where Code Meets Magic</title>
+        <meta name="description" content="The ultimate coding playground by two Carters - showcasing amazing projects, experiments, and digital wizardry">
+    <link rel="stylesheet" href="styles/main.css?v=4.9">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-text">MAGNICODE</span>
+                <div class="loader-bar">
+                    <div class="loader-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-gradient">MAGNICODE</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">WELCOME TO</span>
+                    <span class="title-main">MAGNICODE</span>
+                    <span class="title-subtitle">Where Code Meets Magic</span>
+                </h1>
+                <p class="hero-description">
+                    Two Carters, infinite possibilities. Dive into our digital playground where we craft 
+                    extraordinary code, experiment with cutting-edge technologies, and build the impossible.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>Meet the Team</span>
+                        <i class="fas fa-users"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-lines"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    Our Projects
+                </h2>
+                <p class="section-description">
+                    Showcasing our latest experiments, tools, and digital creations organized by category
+                </p>
+            </div>
+
+            <!-- Project Categories with Dropdowns -->
+            <div class="project-categories">
+                
+                <!-- Entertainment Category -->
+                <div class="category-section expanded">
+                    <div class="category-header" data-category="entertainment">
+                        <div class="category-info">
+                            <div class="category-icon entertainment-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="category-details">
+                                <h3 class="category-title">Entertainment</h3>
+                                <p class="category-description">Games, fun projects, and chaotic digital experiences</p>
+                            </div>
+                        </div>
+                        <div class="category-controls">
+                            <span class="project-count">1 project</span>
+                            <div class="dropdown-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="projects-grid">
+                            <!-- Cornclub Project -->
+                            <a href="https://www.cornclub.org" target="_blank" class="project-card" title="Visit Cornclub">
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="tag entertainment-tag">HTML</span>
+                                        <span class="tag entertainment-tag">JavaScript</span>
+                                        <span class="tag entertainment-tag">Fun</span>
+                                    </div>
+                                    <h3 class="project-title">Cornclub</h3>
+                                    <p class="project-description">
+                                        Our hilarious nti-Iowa cult website packed with random games, weird content, and pure chaotic entertainment. Embrace the corn! 🌽
+                                    </p>
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            <span>Live Site</span>
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-laugh"></i>
+                                            <span>For Fun</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Applications Category -->
+                <div class="category-section">
+                    <div class="category-header" data-category="web">
+                        <div class="category-info">
+                            <div class="category-icon web-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="category-details">
+                                <h3 class="category-title">Web Applications</h3>
+                                <p class="category-description">Websites, web apps, and online tools</p>
+                            </div>
+                        </div>
+                        <div class="category-controls">
+                            <span class="project-count">2 projects</span>
+                            <div class="dropdown-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="projects-grid">
+                            <!-- Web Application 1 -->
+                            <a href="#" class="project-card" title="View Advanced Web App">
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="tag web-tag">React</span>
+                                        <span class="tag web-tag">Node.js</span>
+                                        <span class="tag web-tag">API</span>
+                                    </div>
+                                    <h3 class="project-title">Advanced Web App</h3>
+                                    <p class="project-description">
+                                        A revolutionary web application that changes everything you know about user experience and interface design.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Web Application 2 -->
+                            <a href="#" class="project-card" title="View 3D Web Experience">
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="tag web-tag">Three.js</span>
+                                        <span class="tag web-tag">WebGL</span>
+                                        <span class="tag web-tag">3D</span>
+                                    </div>
+                                    <h3 class="project-title">3D Web Experience</h3>
+                                    <p class="project-description">
+                                        Interactive 3D web experience showcasing the power of modern web technologies and immersive design.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developer Tools Category -->
+                <div class="category-section">
+                    <div class="category-header" data-category="tools">
+                        <div class="category-info">
+                            <div class="category-icon tools-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="category-details">
+                                <h3 class="category-title">Developer Tools</h3>
+                                <p class="category-description">Productivity tools and developer utilities</p>
+                            </div>
+                        </div>
+                        <div class="category-controls">
+                            <span class="project-count">1 project</span>
+                            <div class="dropdown-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="tag tools-tag">JavaScript</span>
+                                        <span class="tag tools-tag">Electron</span>
+                                        <span class="tag tools-tag">CLI</span>
+                                    </div>
+                                    <h3 class="project-title">Developer Productivity Suite</h3>
+                                    <p class="project-description">
+                                        Essential productivity tool that every developer needs in their workflow arsenal for maximum efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Category -->
+                <div class="category-section">
+                    <div class="category-header" data-category="ai">
+                        <div class="category-info">
+                            <div class="category-icon ai-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="category-details">
+                                <h3 class="category-title">AI & Machine Learning</h3>
+                                <p class="category-description">Artificial intelligence and ML experiments</p>
+                            </div>
+                        </div>
+                        <div class="category-controls">
+                            <span class="project-count">1 project</span>
+                            <div class="dropdown-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-tags">
+                                        <span class="tag ai-tag">Python</span>
+                                        <span class="tag ai-tag">TensorFlow</span>
+                                        <span class="tag ai-tag">Neural Networks</span>
+                                    </div>
+                                    <h3 class="project-title">AI Research Project</h3>
+                                    <p class="project-description">
+                                        Cutting-edge machine learning project pushing the boundaries of artificial intelligence and neural networks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Apps Category -->
+                <div class="category-section">
+                    <div class="category-header" data-category="mobile">
+                        <div class="category-info">
+                            <div class="category-icon mobile-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="category-details">
+                                <h3 class="category-title">Mobile Applications</h3>
+                                <p class="category-description">iOS, Android, and cross-platform apps</p>
+                            </div>
+                        </div>
+                        <div class="category-controls">
+                            <span class="project-count">1 project</span>
+                            <div class="dropdown-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                            <a href="#" class="project-link">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-app-store"></i>
+                                        </a>
+                                    </div>
+                                    <div class="project-tags">
+                                        <span class="tag mobile-tag">Flutter</span>
+                                        <span class="tag mobile-tag">Dart</span>
+                                        <span class="tag mobile-tag">Cross-Platform</span>
+                                    </div>
+                                    <h3 class="project-title">Mobile Magic</h3>
+                                    <p class="project-description">
+                                        Cross-platform mobile application delivering seamless performance across all devices and platforms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    Meet the Carters
+                </h2>
+                <p class="section-description">
+                    Two passionate developers on a mission to create extraordinary digital experiences
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="team-cards">
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="avatar">
+                                    <div class="avatar-placeholder">
+                                        <i class="fas fa-user-astronaut"></i>
+                                    </div>
+                                </div>
+                                <h3 class="team-name">Carter One</h3>
+                                <p class="team-role">Full-Stack Developer</p>
+                                <div class="team-skills">
+                                    <span class="skill">React</span>
+                                    <span class="skill">Node.js</span>
+                                    <span class="skill">Python</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p class="team-bio">
+                                    Passionate about creating seamless user experiences and scalable backend solutions. 
+                                    Always exploring the latest in web technologies and AI.
+                                </p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="avatar">
+                                    <div class="avatar-placeholder">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                </div>
+                                <h3 class="team-name">Carter Two</h3>
+                                <p class="team-role">Creative Developer</p>
+                                <div class="team-skills">
+                                    <span class="skill">JavaScript</span>
+                                    <span class="skill">Three.js</span>
+                                    <span class="skill">Unity</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p class="team-bio">
+                                    Specializes in interactive experiences and game development. 
+                                    Loves pushing the boundaries of what's possible in digital media.
+                                </p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="73623">0</div>
+                        <div class="stat-label">Lines of Code</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4">1</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="754">0</div>
+                        <div class="stat-label">Hours of Misery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">03</span>
+                    Let's Connect
+                </h2>
+                <p class="section-description">
+                    Ready to collaborate or just want to say hello? We'd love to hear from you!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Carter</h3>
+                            <p>Use the form on the right.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/magnicode</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Open Source</h3>
+                            <p>Eventually this will be a thing. Not today however.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-gradient">MAGNICODE</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Magnicode. Crafted with ❤️ by the Carters</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/main.js?v=3.7"></script>
+
+    <!-- 
+    ============================================
+    HOW TO ADD PROJECT BACKGROUND IMAGES:
+    ============================================
+    
+    Method 1 - By Project Title (Recommended):
+    <script>
+        // Add background to existing project
+        setProjectBackgroundByTitle("Cornclub", "images/cornclub-bg.png");
+        setProjectBackgroundByTitle("Advanced Web App", "images/webapp-bg.png");
+    </script>
+    
+    Method 2 - By CSS Selector:
+    <script>
+        // Add background using specific selector
+        setProjectBackground(".project-card[data-category='entertainment']", "images/game-bg.png");
+    </script>
+    
+    Method 3 - Direct HTML Attribute:
+    Add data-bg="path/to/image.png" directly to any project-card div
+    
+    Features:
+    ✓ Automatic 50% dark overlay for text readability
+    ✓ Enhanced hover effects with lighter overlay
+    ✓ Background images scale and position automatically
+    ✓ Works with any PNG, JPG, or other image formats
+    -->
+    
+    <!-- AUTO-SETUP PROJECT BACKGROUNDS -->
+    <script>
+        // Wait for page to load before applying backgrounds
+        window.addEventListener('load', function() {
+            // Give the app time to initialize
+            setTimeout(function() {
+                console.log('🎨 Setting up project backgrounds...');
+                
+                // Apply backgrounds to your projects
+                // Just replace the image paths with your actual images when you add them
+                
+                // Entertainment projects
+                setProjectBackgroundByTitle("Cornclub", "images/cornclub-bg.png");
+                
+                // Web projects  
+                setProjectBackgroundByTitle("Advanced Web App", "images/webapp-bg.png");
+                setProjectBackgroundByTitle("3D Web Experience", "images/3d-web-bg.png");
+                
+                // Tools projects
+                setProjectBackgroundByTitle("Developer Productivity Suite", "images/dev-tools-bg.png");
+                
+                // AI projects
+                setProjectBackgroundByTitle("AI Research Project", "images/ai-bg.png");
+                
+                // Mobile projects
+                setProjectBackgroundByTitle("Mobile Magic", "images/mobile-bg.png");
+                
+                console.log('✅ Project background setup complete!');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

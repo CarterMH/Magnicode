@@ -1,0 +1,38 @@
+/* 
+  TEST BACKGROUNDS CSS
+  Add this to your main.css temporarily to test the background system
+  with gradient backgrounds instead of images
+*/
+
+/* Test gradients for each project category */
+.project-card[data-bg*="cornclub"] {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+}
+
+.project-card[data-bg*="webapp"] {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%);
+}
+
+.project-card[data-bg*="3d-web"] {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
+}
+
+.project-card[data-bg*="dev-tools"] {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+}
+
+.project-card[data-bg*="ai"] {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+}
+
+.project-card[data-bg*="mobile"] {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 50%, #9d174d 100%);
+}
+
+/* 
+  INSTRUCTIONS:
+  1. Copy this CSS and paste it at the end of your main.css file
+  2. Refresh your website to see colorful gradient backgrounds on your project cards
+  3. When you add real PNG images, remove this test CSS
+  4. The dark overlay and hover effects will still work perfectly!
+*/
