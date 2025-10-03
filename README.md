@@ -2,6 +2,20 @@
 
 A mind-blowing, modern launchpad website showcasing the incredible projects and skills of two talented developers named Carter. Built with pure HTML, CSS, and JavaScript, featuring stunning animations, interactive effects, and cutting-edge web technologies.
 
+## 🌐 GitHub Pages Deployment
+
+**Live Site:** [https://cartermh.github.io/Magnitode/](https://cartermh.github.io/Magnitode/)
+
+### Quick Setup
+1. Go to repository **Settings** → **Pages**
+2. Set **Source** to **GitHub Actions**
+3. Push to `main` branch - site deploys automatically!
+
+### Included Files
+- ✅ `.nojekyll` - Prevents Jekyll processing
+- ✅ `deploy.yml` - GitHub Actions workflow
+- ✅ All paths optimized for GitHub Pages
+
 ## ✨ Features
 
 ### 🎨 Visual Excellence

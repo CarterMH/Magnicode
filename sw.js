@@ -1,11 +1,11 @@
 // Service Worker for Magnicode PWA
 const CACHE_NAME = 'magnicode-v1.0.0';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles/main.css',
-  '/scripts/main.js',
-  '/README.md',
+  './',
+  './index.html',
+  './styles/main.css',
+  './scripts/main.js',
+  './README.md',
   'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
   'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'
